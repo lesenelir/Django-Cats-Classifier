@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/static/css/info.css">
+<title>详细信息</title>
+</head>
+<body>
+<div class="top">
+	<p>识别结果详情</p>
+</div>
+<div class="m1">
+	<div class="catlogo">
+	<img src="/static/img/download/{{ picname }}" />
+	</div>
+	<div class="catname">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ nameinfo }}
+	</p>
+	</div>
+</div>
+<div class="m2">
+	<div class="feature">
+		<div class="featt">
+			<p>外形特征</p>
+		</div>
+		<p class="nn">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ feature }}
+		</p>
+	</div>
+	<div class="live">
+		<div class="featt">
+			<p>生活习性</p>
+		</div>
+		<p class="nn">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ livemethod }}
+		</p>
+	</div>
+</div>
+<div class="m3">
+	<div class="feedmethod">
+		<div class="methodtitle">
+			<p>饲养须知</p>
+		</div>
+		<p class="nn">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ feednn }}
+		</p>
+	</div>
+	<div class="feedmain">
+		<div class="maintitle">
+			<p>饲养方法</p>
+		</div>
+		<p class="nn">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ feedmethod }}
+		</p>
+	</div>
+</div>
+<img src="/static/img/cat_foot.jpg" class="footcat"/>
+</body>
+</html>

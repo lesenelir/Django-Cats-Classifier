@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/static/css/style.css"/>
+<script type="text/javascript" src="/static/js/cat.js" ></script>
+<title>猫的种类识别</title>
+</head>
+<body class="bc">
+<div class="main1">
+<div class="main">
+	<div class="title">
+		<p>keras识别猫种类</p>
+	</div>
+	<div class="select">
+        <!--转到视图info-->
+		<form action="/info/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+			<input type="file" class="xfile" id="btn_file" name="pic1"/>
+			<button type="button" onclick="F_Open_dialog()" class="xxfile">选择图片</button>
+			<br />
+			<input type="submit" class="xxsub" value="种类识别"/>
+		</form>
+	</div>
+	<div class="foot">
+		<ul>
+		<li>
+			<ol>
+				<dd>识别种类</dd>
+				<dl>喵宝-布偶</dl>
+				<dl>喵宝-孟买</dl>
+				<dl>喵宝-暹罗</dl>
+				<dl>喵宝-英短</dl>
+			</ol>
+		</li>
+		<li>
+			<ol>
+				<dd>应用说明</dd>
+				<dl>上传图片均为jpg</dl>
+				<dl>识别精度90%以上</dl>
+			</ol>
+		</li>
+		</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>
